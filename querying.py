@@ -3,6 +3,8 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
 
+
+
 def query(question, name_col):
 
     embeddings = HuggingFaceEmbeddings(
