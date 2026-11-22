@@ -5,4 +5,5 @@ langchain-chroma
 langchain-huggingface
 langchain-text-splitters
 langchain-core
+langchain-groq
 sentence-transformers
