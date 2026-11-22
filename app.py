@@ -8,6 +8,11 @@ from langchain_groq import ChatGroq
 from indexing import trust_the_process
 from querying import query
 
+import os
+
+if "GROQ_API_KEY" in st.secrets and "GROQ_API_KEY" not in os.environ:
+    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+
 # 1. LLM, prompt, and chain
 llm = ChatGroq(
     model="openai/gpt-oss-120b",
