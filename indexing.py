@@ -6,7 +6,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
 
-def trust_the_process(pdf, name_col):
+def trust_the_process(pdf):
 
     # 1. Extract PDF text
     pdf.seek(0)
@@ -40,7 +40,6 @@ def trust_the_process(pdf, name_col):
 
     # 4. ChromaDB
     db = Chroma(
-        collection_name=name_col,
         embedding_function=embeddings,
         persist_directory="./chroma_langchain_db"
     )
