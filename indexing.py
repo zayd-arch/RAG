@@ -40,6 +40,7 @@ def trust_the_process(pdf):
 
     # 4. ChromaDB
     db = Chroma(
+        collection_name='my_app_docs',
         embedding_function=embeddings,
         persist_directory="./chroma_langchain_db"
     )

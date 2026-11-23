@@ -5,14 +5,14 @@ from langchain_chroma import Chroma
 
 
 
-def query(question, name_col):
+def query(question):
 
     embeddings = HuggingFaceEmbeddings(
         model_name="all-MiniLM-L6-v2"
     )
 
     db = Chroma(
-        collection_name=name_col,
+        collection_name='my_app_docs',
         embedding_function=embeddings,
         persist_directory="./chroma_langchain_db"
     )

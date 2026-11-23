@@ -1,12 +1,9 @@
-# RAG
+# RECALL
 
-RAG consists of 2 main steps:
-    .indexing
-    .querying
+Recall is an AI studyy assistant that lets you upload PDFs and get summaries,
+flashcards,and answer to you question about them.
 
-indexing:
-encapsulates the process of data ingestion,chunking , embeding , and storing in a vectordb
-
+# Features
 
 
 
