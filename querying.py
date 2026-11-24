@@ -16,7 +16,7 @@ def query(question):
         embedding_function=embeddings,
         persist_directory="./chroma_langchain_db"
     )
-
+# ill try FAISS
     results = db.similarity_search(
         question,
         k=4
