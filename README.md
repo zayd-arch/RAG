@@ -31,15 +31,9 @@ uv run streamlit run app.py
 - **ChromaDB:** free vector db.
 - **pypdf:** to read the pdfs.
 
-## How It Works
+## Architecture
+!(imgs/architecture.jpg)
 
-- **indexing.py:**
-
-  ![Indexing pipeline diagram](imgs/indexing.png)
-
-- **querying.py:**
-
-  ![Querying pipeline diagram](imgs/querying.png)
 # Live demo
 Hosted on Streamlit Community Cloud: [Open RECALL](https://skbjlcmoqbux6mjuacjhkk.streamlit.app/)
 
