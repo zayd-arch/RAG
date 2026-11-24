@@ -25,19 +25,21 @@ uv run streamlit run app.py
 ```
 --- 
 # Tech stack
--**langchain:**handles te chatbot pipeline from embedding(alongside the huggingface sentence_transformer),chuking,prompting,parsing and the llm integration.
--**streamlit:**offers a GUI chat-bot interface with ready to use widgets and simple integration ith back end code and langchain.
--**llm provider:**Groq model "openai/gpt-oss-120b"(free).
--**ChromaDB:**free vector db.
--**pypdf:**to read the pdfs.
+- **langchain:**handles te chatbot pipeline from embedding(alongside the huggingface sentence_transformer),chuking,prompting,parsing and the llm integration.
+- **streamlit:**offers a GUI chat-bot interface with ready to use widgets and simple integration ith back end code and langchain.
+- **llm provider:**Groq model "openai/gpt-oss-120b"(free).
+- **ChromaDB:**free vector db.
+- **pypdf:**to read the pdfs.
 
-# How it works
--**indexing.py:**
--!(indexing.png)
+## How It Works
 
--**querying.py:**
--!(querying.png)
+- **indexing.py:**
 
+  ![Indexing pipeline diagram](indexing.png)
+
+- **querying.py:**
+
+  ![Querying pipeline diagram](querying.png)
 # Live demo
 Hosted on Streamlit Community Cloud: [Open RECALL](https://skbjlcmoqbux6mjuacjhkk.streamlit.app/)
 
