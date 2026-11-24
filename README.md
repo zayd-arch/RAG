@@ -25,8 +25,8 @@ uv run streamlit run app.py
 ```
 --- 
 # Tech stack
-- **langchain:** handles te chatbot pipeline from embedding(alongside the huggingface sentence_transformer),chuking,prompting,parsing and the llm integration.
-- **streamlit:** offers a GUI chat-bot interface with ready to use widgets and simple integration ith back end code and langchain.
+- **langchain:** handles the chatbot pipeline from embedding(alongside the huggingface sentence_transformer),chunking,prompting,parsing and the llm integration.
+- **streamlit:** offers a GUI chat-bot interface with ready to use widgets and simple integration with back end code and langchain and provides user session state to keep the chat history will the llm in the session.
 - **llm provider:** Groq model "openai/gpt-oss-120b"(free).
 - **ChromaDB:** free vector db.
 - **pypdf:** to read the pdfs.
