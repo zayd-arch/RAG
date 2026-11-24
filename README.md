@@ -32,8 +32,7 @@ uv run streamlit run app.py
 - **pypdf:** to read the pdfs.
 
 ## Architecture
-!(imgs/architecture.jpg)
-
+![RECALL Architecture](imgs/architecture.jpg)
 # Live demo
 Hosted on Streamlit Community Cloud: [Open RECALL](https://skbjlcmoqbux6mjuacjhkk.streamlit.app/)
 
