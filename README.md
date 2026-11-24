@@ -35,11 +35,11 @@ uv run streamlit run app.py
 
 - **indexing.py:**
 
-  ![Indexing pipeline diagram](indexing.png)
+  ![Indexing pipeline diagram](imgs/indexing.png)
 
 - **querying.py:**
 
-  ![Querying pipeline diagram](querying.png)
+  ![Querying pipeline diagram](imgs/querying.png)
 # Live demo
 Hosted on Streamlit Community Cloud: [Open RECALL](https://skbjlcmoqbux6mjuacjhkk.streamlit.app/)
 
