@@ -11,7 +11,7 @@ from langchain_groq import ChatGroq
 from indexing import trust_the_process
 from querying import query
 
-st.title("RECALL your AI study buddy")
+st.title("RECALL your AI study Assistant")
 
 if "GROQ_API_KEY" in st.secrets and "GROQ_API_KEY" not in os.environ:
     os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
@@ -56,7 +56,7 @@ for m in st.session_state.messages:
 user_input = st.chat_input("", accept_file=True, file_type=["pdf"])
 
 if user_input:
-    # 1) index a new PDF
+    # index a new PDF
     if user_input.files:
         f = user_input.files[0]
         if f.name not in st.session_state.indexed:
@@ -65,7 +65,7 @@ if user_input:
             st.session_state.indexed.add(f.name)
             st.toast("PDF indexed")
 
-    # 2) answer a question
+    # answer a question
     if user_input.text:
         st.session_state.messages.append({"role": "user", "content": user_input.text})
         with st.chat_message("user"):
