@@ -3,6 +3,11 @@
 **RECALL** is an AI-powered study assistant built with Retrieval-Augmented Generation (RAG). Upload PDF documents—lecture notes, textbooks, or research papers—and generate summaries, flashcards, key takeaways, or ask targeted questions grounded directly in your material.
 
 --- 
+## Motivation
+
+- Moving away from building small predictive models and exploring other applied areas that utilize Retrieval-Augmented Generation (RAG).
+- Throughout the project, I discovered the possibility of adding an LLM, evolving **RECALL** from a simple PDF digestor into an end-to-end study chatbot.
+
 
 ## Features
 - **PDF Ingestion & Parsing:** Upload one or multiple PDFs to extract, chunk, and index text automatically.
